@@ -4,7 +4,7 @@ import { AuthContext } from '../../Provider/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
-import app from '../../firebase/firebase.config';
+import app from '../../Firebase/firebase.config';
 
 const Login = () => {
   const provider = new GoogleAuthProvider();
@@ -86,12 +86,12 @@ const Login = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn bg-blue-500 hover:bg-blue-700 text-white">
+            <button className="btn bg-cyan-500 hover:bg-cyan-700 text-white">
               Sign in
             </button>
             <button
               onClick={handleGoogleSignIn}
-              className="btn bg-blue-500 hover:bg-blue-700 text-white mt-7"
+              className="btn bg-cyan-500 hover:bg-cyan-700 text-white mt-7"
             >
               Or sign in with Google
             </button>
@@ -101,7 +101,7 @@ const Login = () => {
         <p className="text-center mt-4">
           Do not have an account?{' '}
           <Link
-            className="text-blue-500 hover:text-blue-700 font-bold"
+            className="text-cyan-500 hover:text-cyan-700 font-bold"
             to="/register"
           >
             Register

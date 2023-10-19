@@ -103,7 +103,7 @@ const Register = () => {
           </div>
           {regError && <p className="text-red-600">{regError}</p>}
           <div className="form-control mt-6">
-            <button className="btn bg-blue-500 hover:bg-blue-700 text-white">
+            <button className="btn bg-cyan-500 hover:bg-cyan-700 text-white">
               Register
             </button>
           </div>
@@ -112,7 +112,7 @@ const Register = () => {
         <p className="text-center mt-4">
           Already have an account?{' '}
           <Link
-            className="text-blue-500 hover:text-blue-700 font-bold"
+            className="text-cyan-500 hover:text-cyan-700 font-bold"
             to="/login"
           >
             Sign in

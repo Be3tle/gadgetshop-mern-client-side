@@ -1,8 +1,16 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from './logo.png';
 import emblem from './user.png';
+import { useContext } from 'react';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
+  const handleSignOut = () => {
+    logOut().then().catch();
+  };
+
   const navLinks = (
     <>
       <li>
@@ -18,8 +26,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="">
-      <div className="navbar bg-base-100 max-w-4xl mx-auto">
+    <div>
+      <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -40,7 +48,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-cyan-500 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-blue-500 rounded-box w-52"
             >
               {navLinks}
             </ul>
@@ -53,19 +61,23 @@ const Navbar = () => {
         <div className="navbar-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src={emblem} />
+              <img src={user ? user?.photoURL : emblem} />
             </div>
           </label>
-
-          <button className="btn bg-cyan-500 hover:bg-cyan-700 text-white">
-            Sign Out
-          </button>
-
-          <Link to="/login">
-            <button className="btn bg-cyan-500 hover:bg-cyan-700 text-white">
-              Sign Up / Sign In
+          {user ? (
+            <button
+              onClick={handleSignOut}
+              className="btn bg-cyan-500 hover:bg-cyan-700 text-white"
+            >
+              Sign out
             </button>
-          </Link>
+          ) : (
+            <Link to="/login">
+              <button className="btn bg-cyan-500 hover:bg-cyan-700 text-white">
+                Sign in / Sign up
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
