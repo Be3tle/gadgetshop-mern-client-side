@@ -5,6 +5,7 @@ import Error from '../Pages/Error/Error';
 import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
 import Register from '../Pages/Login/Register';
+import Products from '../Pages/Products/Products';
 
 const routes = createBrowserRouter([
   {
@@ -24,6 +25,14 @@ const routes = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>,
+      },
+      {
+        path: '/brand/:name',
+        element: <Products></Products>,
+      },
+      {
+        path: '/addToCart',
+        element: <Products></Products>,
       },
     ],
   },
