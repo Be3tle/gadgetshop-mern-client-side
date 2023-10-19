@@ -40,7 +40,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-blue-500 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-cyan-500 rounded-box w-52"
             >
               {navLinks}
             </ul>
@@ -57,12 +57,12 @@ const Navbar = () => {
             </div>
           </label>
 
-          <button className="btn bg-blue-500 hover:bg-blue-700 text-white">
+          <button className="btn bg-cyan-500 hover:bg-cyan-700 text-white">
             Sign Out
           </button>
 
           <Link to="/login">
-            <button className="btn bg-blue-500 hover:bg-blue-700 text-white">
+            <button className="btn bg-cyan-500 hover:bg-cyan-700 text-white">
               Sign Up / Sign In
             </button>
           </Link>
