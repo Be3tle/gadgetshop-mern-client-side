@@ -2,9 +2,9 @@
 import { Link } from 'react-router-dom';
 
 const BrandCard = ({ card }) => {
-  const { id, name, logo } = card || {};
+  const { id, brand, logo } = card || {};
   return (
-    <Link to={`/brand/${name}`} state={name}>
+    <Link to={`/brand/${brand}`} state={brand}>
       <div>
         <div key={id} className="mb-4 relative">
           <div
@@ -15,7 +15,7 @@ const BrandCard = ({ card }) => {
             </div>
 
             <div className="p-2">
-              <h5 className="text-lg font-bold my-2 text-gray-700">{name}</h5>
+              <h5 className="text-lg font-bold my-2 text-gray-700">{brand}</h5>
             </div>
           </div>
           <div className="overlay absolute inset-0 bg-black bg-opacity-50 text-white text-center opacity-0 transition-opacity duration-300 hover:opacity-100"></div>

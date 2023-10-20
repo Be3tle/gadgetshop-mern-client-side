@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from './logo.png';
 import emblem from './user.png';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Navbar = () => {
@@ -11,15 +11,37 @@ const Navbar = () => {
     logOut().then().catch();
   };
 
+  const [theme, setTheme] = useState('null');
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  }, []);
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
   const navLinks = (
     <>
-      <li>
+      <li className="dark:text-white">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li>
-        <NavLink to="/addToCart">Add Product</NavLink>
+      <li className="dark:text-white ">
+        <NavLink to="/addProduct">Add Product</NavLink>
       </li>
-      <li>
+      <li className="dark:text-white">
         <NavLink to="/myCart">My Cart</NavLink>
       </li>
     </>
@@ -27,10 +49,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 max-w-4xl mx-auto">
+      <div className="navbar max-w-4xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost  lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -60,7 +82,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
+            <div className="w-10 rounded-full mr-3">
               <img src={user ? user?.photoURL : emblem} />
             </div>
           </label>
@@ -78,6 +100,13 @@ const Navbar = () => {
               </button>
             </Link>
           )}
+
+          <input
+            onClick={handleThemeSwitch}
+            type="checkbox"
+            className="toggle ml-3"
+            id="my-toggle"
+          />
         </div>
       </div>
     </div>

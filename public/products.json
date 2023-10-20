@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "brand": "Apple",
+    "name": "iPhone 13 Pro",
+    "type": "phone",
+    "price": 1099,
+    "rating": 4.8,
+    "description": "The latest flagship phone from Apple with advanced camera capabilities and A15 Bionic chip.",
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-13-pro-max-green-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072988818"
+  },
+  {
+    "id": 2,
+    "brand": "Apple",
+    "name": "MacBook Air",
+    "type": "computer",
+    "price": 999,
+    "rating": 4.9,
+    "description": "Ultra-thin and lightweight laptop with M1 chip for blazing-fast performance and battery life.",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=892&hei=820&&qlt=80&.v=1603332211000"
+  },
+  {
+    "id": 3,
+    "brand": "Apple",
+    "name": "AirPods Pro",
+    "type": "headphone",
+    "price": 249,
+    "rating": 4.7,
+    "description": "Immersive sound with Active Noise Cancellation and Transparency mode for a customizable fit.",
+    "image": "https://www.custommacbd.com/cdn/shop/products/MWP22.jpg?v=1622172977"
+  },
+  {
+    "id": 4,
+    "brand": "Apple",
+    "name": "iPad Pro",
+    "type": "tablet",
+    "price": 799,
+    "rating": 4.8,
+    "description": "Powerful tablet with M1 chip, ProMotion display, and advanced camera system.",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPad-Pro-M2-2022---12.9inch-Space-Gray-6193.jpg"
+  },
+  {
+    "id": 5,
+    "brand": "Samsung",
+    "name": "Galaxy S21 Ultra",
+    "type": "phone",
+    "price": 1199,
+    "rating": 4.7,
+    "description": "Flagship smartphone with 108MP camera, 100x Space Zoom, and 5G capabilities.",
+    "image": "https://www.gizmochina.com/wp-content/uploads/2020/11/Samsung-Galaxy-S21-Ultra-5G-500x500.jpg"
+  },
+  {
+    "id": 6,
+    "brand": "Samsung",
+    "name": "Galaxy Book Pro",
+    "type": "computer",
+    "price": 1199,
+    "rating": 4.6,
+    "description": "Ultra-slim laptop with AMOLED display, Intel Evo platform, and long battery life.",
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/hk_en/galaxy-book/feature/hk_en-feature-thin-as-a-smartphone--powerful-as-a-pc-430327742?%24FB_TYPE_A_JPG%24"
+  },
+  {
+    "id": 7,
+    "brand": "Samsung",
+    "name": "Galaxy Buds Pro",
+    "type": "headphone",
+    "price": 199,
+    "rating": 4.8,
+    "description": "Immersive sound with Intelligent ANC and IPX7 water resistance for active lifestyles.",
+    "image": "https://www.startech.com.bd/image/cache/catalog/earbuds/samsung/galaxy-buds-pro/galaxy-buds-pro-03-500x500.webp"
+  },
+  {
+    "id": 8,
+    "brand": "Samsung",
+    "name": "Galaxy Tab S7+",
+    "type": "tablet",
+    "price": 849,
+    "rating": 4.9,
+    "description": "Premium tablet with 120Hz Super AMOLED display, S Pen, and PC-like experience.",
+    "image": "https://image-us.samsung.com/SamsungUS/pim/migration/mobile/tablets/all-other-tablets/sm-t280nzkaxar/Pdpdefault-sm-t280nzkaxar-600x600-C1-052016.png?$product-details-jpg$"
+  },
+  {
+    "id": 9,
+    "brand": "Microsoft",
+    "name": "Surface Laptop 4",
+    "type": "computer",
+    "price": 999,
+    "rating": 4.8,
+    "description": "Elegant laptop with AMD or Intel processors, high-res PixelSense touchscreen, and all-day battery life.",
+    "image": "https://www.cloud.ryanscomputers.com/cdn/products/medium/microsoft-surface-laptop-4-intel-core-i5-1135g7-11632738223.webp"
+  },
+  {
+    "id": 10,
+    "brand": "Microsoft",
+    "name": "Xbox Series X",
+    "type": "gaming console",
+    "price": 499,
+    "rating": 4.9,
+    "description": "Next-gen gaming console with 12 teraflops of power, 4K gaming, and fast load times.",
+    "image": "https://www.startech.com.bd/image/cache/catalog/gaming-console/microsoft/xbox-series-x/xbox-series-x-01-500x500.webp"
+  },
+  {
+    "id": 11,
+    "brand": "Microsoft",
+    "name": "Surface Headphones 2+",
+    "type": "headphone",
+    "price": 249,
+    "rating": 4.7,
+    "description": "Premium wireless headphones with 13 levels of active noise cancellation and touch controls.",
+    "image": "https://m.media-amazon.com/images/I/61WQSvgxsHL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 12,
+    "brand": "Dell",
+    "name": "XPS 13",
+    "type": "computer",
+    "price": 999,
+    "rating": 4.8,
+    "description": "Compact laptop with InfinityEdge display, Intel Core processors, and stunning design.",
+    "image": "https://www.custommacbd.com/cdn/shop/products/dell-xps-13-custom-mac-bd_1074dfa2-2eb1-44a9-b742-8a81c0251110.png?v=1655710437"
+  },
+  {
+    "id": 13,
+    "brand": "Dell",
+    "name": "Alienware m15 R4",
+    "type": "gaming laptop",
+    "price": 2349,
+    "rating": 4.7,
+    "description": "High-performance gaming laptop with NVIDIA graphics, advanced cooling, and AlienFX lighting.",
+    "image": "https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9hc3IvY2I5OGJmMjQtMTkxYi00MzRkLTg0MjQtZmM3ODEwY2QzMTFhLjM5NTY1YWU3NWMxMDUxNDM5MWYxN2FhZTk5YTIxMGQ5LmpwZWc.jpg"
+  },
+  {
+    "id": 14,
+    "brand": "Dell",
+    "name": "Dell UltraSharp U2720Q",
+    "type": "monitor",
+    "price": 689,
+    "rating": 4.8,
+    "description": "27-inch 4K USB-C monitor with InfinityEdge display for exceptional color accuracy.",
+    "image": "https://www.vibegaming.com.bd/wp-content/uploads/2022/04/e27-g4-001-500x500-28.jpg"
+  },
+  {
+    "id": 15,
+    "brand": "Google",
+    "name": "Pixel 6",
+    "type": "phone",
+    "price": 699,
+    "rating": 4.6,
+    "description": "Flagship phone with Google Tensor SoC, advanced camera system, and 5G support.",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3784-95312.jpg"
+  },
+  {
+    "id": 16,
+    "brand": "Google",
+    "name": "Pixelbook Go",
+    "type": "laptop",
+    "price": 649,
+    "rating": 4.7,
+    "description": "Lightweight Chromebook with long battery life, 13.3-inch touchscreen, and premium build.",
+    "image": "https://m.media-amazon.com/images/I/81sDDc7rKqL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 17,
+    "brand": "Google",
+    "name": "Nest Audio",
+    "type": "speaker",
+    "price": 99,
+    "rating": 4.8,
+    "description": "Smart speaker with immersive sound and Google Assistant for hands-free control.",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/2341-40905.jpg"
+  },
+  {
+    "id": 18,
+    "brand": "Google",
+    "name": "Nest Hub Max",
+    "type": "smart display",
+    "price": 229,
+    "rating": 4.7,
+    "description": "10-inch smart display with Google Assistant and built-in Nest camera for home control.",
+    "image": "https://www.bdshop.com/pub/media/catalog/product/cache/eaf695a7c2edd83636a0242f7ce59484/g/o/google-nest-hub-max-smart-home-display.jpg"
+  },
+  {
+    "id": 19,
+    "brand": "Google",
+    "name": "Pixel 6 Pro",
+    "type": "phone",
+    "price": 899,
+    "rating": 4.8,
+    "description": "Premium flagship phone with 120Hz display, advanced camera system, and 5G support.",
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3784-95312.jpg"
+  },
+  {
+    "id": 20,
+    "brand": "Google",
+    "name": "Pixel Stand",
+    "type": "wireless charger",
+    "price": 79,
+    "rating": 4.6,
+    "description": "Wireless charger with Google Assistant integration and fast charging capabilities.",
+    "image": "https://m.media-amazon.com/images/I/51Q5xfJhcYL._AC_SL1500_.jpg"
+  }
+]

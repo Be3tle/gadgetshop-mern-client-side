@@ -1,8 +1,11 @@
-# React + Vite
+# Electron Gadget Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Site](https://electon-gadgetshop.web.app/)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Curated Selection: We offer a handpicked collection of top-brand gadgets for tech enthusiasts and professionals.
+- User-friendly Interface: Our website provides an intuitive and easy-to-navigate platform for a seamless shopping experience.
+- Secure Transactions: Rest assured, all transactions on our site are encrypted and secure, ensuring the safety of your personal information.
+- Detailed Product Information: Each product listing includes comprehensive details, specifications, and customer reviews to help you make an informed purchase.
+- Responsive Design: Our site is designed to be fully responsive, providing an optimal viewing experience on various devices, including desktops, tablets, and mobile phones.

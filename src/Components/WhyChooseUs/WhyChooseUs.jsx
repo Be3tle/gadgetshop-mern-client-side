@@ -1,12 +1,10 @@
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose-us bg-gray-100 text-white py-12">
-      <div className="container mx-auto text-center">
-        <h2 className="section-heading text-4xl mb-6 text-black">
-          Why Choose Electon?
-        </h2>
+    <section className="why-choose-us py-12">
+      <div className="container mx-auto text-center dark:text-white">
+        <h2 className="section-heading text-4xl mb-6">Why Choose Electon?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="feature p-6 rounded-lg bg-white text-black shadow-lg">
+          <div className="feature p-6 rounded-lg shadow-lg">
             <div className="feature-icon text-blue-900 mb-4">
               <i className="fas fa-check-circle fa-3x"></i>
             </div>
@@ -18,9 +16,9 @@ const WhyChooseUs = () => {
               brands in the industry.
             </p>
           </div>
-          <div className="feature p-6 rounded-lg bg-white text-black shadow-lg">
+          <div className="feature p-6 rounded-lg  shadow-lg">
             <div className="feature-icon text-blue-900 mb-4">
-              <i className="fas fa-truck fa-3x"></i>
+              <i className="fas FaTruck fa-3x"></i>
             </div>
             <h3 className="feature-heading text-2xl mb-2 font-bold">
               Fast Shipping
@@ -30,7 +28,7 @@ const WhyChooseUs = () => {
               delivered in no time.
             </p>
           </div>
-          <div className="feature p-6 rounded-lg bg-white text-black shadow-lg">
+          <div className="feature p-6 rounded-lg  shadow-lg">
             <div className="feature-icon text-blue-900 mb-4">
               <i className="fas fa-heart fa-3x"></i>
             </div>
