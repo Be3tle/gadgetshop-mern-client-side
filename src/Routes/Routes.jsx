@@ -6,7 +6,7 @@ import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
 import Register from '../Pages/Login/Register';
 import Products from '../Pages/Products/Products';
-import AddProduct from '../Pages/AddToCart/AddProduct';
+import AddProduct from '../Pages/AddProduct/AddProduct';
 import MyCart from '../Pages/MyCart/MyCart';
 import UpdateProduct from '../Pages/UpdateProduct/UpdateProduct';
 import PrivateRoute from './PrivateRoute';
@@ -32,15 +32,6 @@ const routes = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path: '/brand/:brand',
-        element: (
-          <PrivateRoute>
-            <Products></Products>
-          </PrivateRoute>
-        ),
-        loader: () => fetch('https://gadgetshop-server.vercel.app/product'),
-      },
-      {
         path: '/addProduct',
         element: (
           <PrivateRoute>
@@ -49,14 +40,15 @@ const routes = createBrowserRouter([
         ),
       },
       {
-        path: '/myCart',
+        path: '/brand/:brand',
         element: (
           <PrivateRoute>
-            <MyCart></MyCart>
+            <Products></Products>
           </PrivateRoute>
         ),
         loader: () => fetch('https://gadgetshop-server.vercel.app/product'),
       },
+
       {
         path: '/details/:id',
         element: (
@@ -76,6 +68,15 @@ const routes = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(`https://gadgetshop-server.vercel.app/product/${params.id}`),
+      },
+      {
+        path: '/myCart/',
+        element: (
+          <PrivateRoute>
+            <MyCart></MyCart>
+          </PrivateRoute>
+        ),
+        loader: () => fetch('https://gadgetshop-server.vercel.app/cart'),
       },
     ],
   },
