@@ -11,34 +11,37 @@ const Navbar = () => {
     logOut().then().catch();
   };
 
-  const [theme, setTheme] = useState('null');
+  const [theme, setTheme] = useState('light');
 
-  useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  function handleThemeSwitch() {
+    const html = document.documentElement;
+
+    if (theme === 'light') {
+      html.classList.remove('light');
+      html.classList.add('dark');
       setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  }, []);
 
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+      localStorage.setItem('theme', 'light');
     }
-  }, [theme]);
+  }
+  useEffect(() => {
+    const currentTheme = localStorage.getItem('theme') || 'light';
 
-  const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
+    setTheme(currentTheme);
+    const html = document.documentElement;
+    html.classList.add(currentTheme);
+  }, []);
 
   const navLinks = (
     <>
       <li className="dark:text-white">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li className="dark:text-white ">
+      <li className="dark:text-white hover:text-gray-500">
         <NavLink to="/addProduct">Add Product</NavLink>
       </li>
       <li className="dark:text-white">
