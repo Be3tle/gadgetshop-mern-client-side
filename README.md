@@ -8,7 +8,7 @@ Visit the live site: [Electron Gadget Shop](https://electon-gadgetshop.web.app/)
 
 ## Backend Repository
 
-Check out the backend code: [Backend Repository](https://electon-gadgetshop.web.app/)
+Check out the backend code: [Backend Repository](https://github.com/Be3tle/gadgetshop-mern-server-side)
 
 ## Features
 
