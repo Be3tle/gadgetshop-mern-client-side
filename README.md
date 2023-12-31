@@ -34,7 +34,7 @@ Check out the backend code: [Backend Repository](https://github.com/Be3tle/gadge
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/electron-gadget-shop.git
+   git clone https://github.com/Be3tle/gadgetshop-mern-client-side.git
    ```
 
 2. Install dependencies for both the frontend and backend:
