@@ -1,7 +1,3 @@
-Certainly! Below is a simple template for a README file for your Electron project:
-
----
-
 # Electron Gadget Shop
 
 Welcome to the Electron Gadget Shop, a simple MERN (MongoDB, Express.js, React.js, Node.js) project featuring a variety of brands-based products. Users can explore and shop for gadgets after logging in. Product data is fetched from MongoDB, providing a seamless shopping experience.
