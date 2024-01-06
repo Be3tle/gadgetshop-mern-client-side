@@ -1,6 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/prop-types */
-
 import Swal from 'sweetalert2';
 
 const DetailsCard = ({ products }) => {
@@ -32,7 +29,7 @@ const DetailsCard = ({ products }) => {
   };
 
   return (
-    <div className="mt-10">
+    <div className="pt-10">
       <div key={id} className="flex justify-center items-center ">
         <div className="relative">
           <img src={image} className="w-96" alt="Your Image" />
@@ -44,7 +41,7 @@ const DetailsCard = ({ products }) => {
         <p className="">{description}</p>
         <button
           onClick={handleAddToCart}
-          className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold my-2 w-40"
+          className="btn bg-cyan-500 hover:bg-cyan-700 text-white font-bold my-2 w-40"
         >
           Add to cart
         </button>
