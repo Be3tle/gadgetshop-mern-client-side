@@ -20,7 +20,7 @@ const Details = () => {
   // console.log(id, products);
 
   return (
-    <div>
+    <div className='py-10'>
       <DetailsCard products={products}></DetailsCard>
     </div>
   );
