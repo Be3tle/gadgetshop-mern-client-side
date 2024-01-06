@@ -10,7 +10,7 @@ const AboutUS = () => {
         />
         <div>
           <h1 className="text-2xl lg:text-5xl font-bold">
-            Elevate Your Tech Game with{' '}
+            Elevate Your Tech Game With{' '}
             <span className="text-cyan-500">Electon</span>
           </h1>
           <p className="py-6">
