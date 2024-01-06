@@ -10,7 +10,7 @@ const Details = () => {
 
   console.log(products);
   useEffect(() => {
-    fetch(`https://gadgetshop-server.vercel.app/product/${id}`).then((res) =>
+    fetch(`http://localhost:4000/product/${id}`).then((res) =>
       res.json().then((data) => {
         setProducts(data);
       })

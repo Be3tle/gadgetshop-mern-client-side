@@ -1,31 +1,26 @@
 import Swal from 'sweetalert2';
+import useAxios from '../../Hooks/useAxios';
 
 const DetailsCard = ({ products }) => {
   const { id, name, image, description } = products || {};
+
+  const axios = useAxios();
 
   const handleAddToCart = () => {
     const cartItem = { name, image };
     console.log(cartItem);
 
-    fetch('http://localhost:5000/cart', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify(cartItem),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        if (data.insertedId) {
-          Swal.fire({
-            title: 'Added successfully!',
-            text: 'Do you want to continue?',
-            icon: 'success',
-            confirmButtonText: 'Sure!',
-          });
-        }
-      });
+    axios.post('/cart', cartItem).then((res) => {
+      console.log(res.data);
+      if (res.data.insertedId) {
+        Swal.fire({
+          title: 'Added successfully!',
+          text: 'Do you want to continue?',
+          icon: 'success',
+          confirmButtonText: 'Sure!',
+        });
+      }
+    });
   };
 
   return (

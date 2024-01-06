@@ -17,7 +17,7 @@ const MyCartCard = ({ cart, cartProducts, setCartProducts }) => {
       confirmButtonText: 'Yes, sure!',
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://gadgetshop-server.vercel.app/cart/${_id}`, {
+        fetch(`http://localhost:4000/cart/${_id}`, {
           method: 'DELETE',
         })
           .then((res) => res.json())

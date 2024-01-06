@@ -46,7 +46,7 @@ const routes = createBrowserRouter([
             <Products></Products>
           </PrivateRoute>
         ),
-        loader: () => fetch('https://gadgetshop-server.vercel.app/product'),
+        loader: () => fetch('http://localhost:4000/product'),
       },
 
       {
@@ -57,7 +57,7 @@ const routes = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://gadgetshop-server.vercel.app/product/${params.id}`),
+          fetch(`http://localhost:4000/product/${params.id}`),
       },
       {
         path: '/update/:id',
@@ -67,7 +67,7 @@ const routes = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://gadgetshop-server.vercel.app/product/${params.id}`),
+          fetch(`http://localhost:4000/product/${params.id}`),
       },
       {
         path: '/myCart/',
@@ -76,7 +76,7 @@ const routes = createBrowserRouter([
             <MyCart></MyCart>
           </PrivateRoute>
         ),
-        loader: () => fetch('https://gadgetshop-server.vercel.app/cart'),
+        loader: () => fetch('http://localhost:4000/cart'),
       },
     ],
   },
