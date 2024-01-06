@@ -1,8 +1,8 @@
 import { useLoaderData } from 'react-router-dom';
 import Banner from '../../Components/Banner/Banner';
 import Brands from '../../Components/Brands/Brands';
-import BannerEvent from '../../Components/BannerEvent/BannerEvent';
 import WhyChooseUs from '../../Components/WhyChooseUs/WhyChooseUs';
+import AboutUS from '../../Components/AboutUs/AboutUs';
 
 const Home = () => {
   const cards = useLoaderData();
@@ -11,7 +11,7 @@ const Home = () => {
     <div className="text-center">
       <Banner></Banner>
       <Brands cards={cards}></Brands>
-      <BannerEvent></BannerEvent>
+      <AboutUS></AboutUS>
       <WhyChooseUs></WhyChooseUs>
     </div>
   );
