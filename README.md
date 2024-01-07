@@ -1,6 +1,6 @@
 # Electron Gadget Shop
 
-Welcome to the Electron Gadget Shop, a simple MERN (MongoDB, Express.js, React.js, Node.js) project featuring a variety of brands-based products. Users can explore and shop for gadgets after logging in. Product data is fetched from MongoDB, providing a seamless shopping experience.
+Welcome to the Electron Gadget Shop, an interactive MERN (MongoDB, Express.js, React.js, Node.js) project featuring a variety of brands-based products. Users can explore and shop for gadgets after logging in. Product data is fetched from MongoDB, providing a seamless shopping experience.
 
 ## Live Site
 
@@ -14,6 +14,10 @@ Check out the backend code: [Backend Repository](https://github.com/Be3tle/gadge
 
 - **User Authentication**: Users need to log in before accessing brand-specific products.
 - **Brands-based Products**: Explore a variety of gadgets categorized by different brands.
+- **Product Details**: Users can now view detailed information about each product.
+- **Add to Cart**: From the product details page, users can add a specific product to their cart.
+- **My Cart Page**: Users have a dedicated page to view all added products to their cart.
+- **Delete Products**: On the cart page, users can delete products one by one to manage their cart efficiently.
 - **MongoDB Integration**: Product data is fetched from MongoDB, ensuring up-to-date and accurate information.
 - **Responsive Design**: The website is designed to provide a seamless experience across various devices.
 
@@ -61,7 +65,7 @@ Check out the backend code: [Backend Repository](https://github.com/Be3tle/gadge
    npm start
    ```
 
-4. Open your browser and visit [http://localhost:3000/](http://localhost:3000/) to view the Electron Gadget Shop.
+4. Open your browser and visit [http://localhost:3000/](http://localhost:3000/) to experience the enhanced Electron Gadget Shop.
 
 ## Contributing
 
