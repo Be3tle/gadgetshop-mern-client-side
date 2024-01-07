@@ -26,7 +26,7 @@ const AddProduct = () => {
     console.log(newProduct);
 
     // send data to server
-    fetch('http://localhost:4000/product', {
+    fetch('https://gadgetshop-server.vercel.app/product', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
