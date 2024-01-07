@@ -1,13 +1,15 @@
 import Swal from 'sweetalert2';
 import useAxios from '../../Hooks/useAxios';
+import useAuth from '../../Hooks/useAuth';
 
 const DetailsCard = ({ products }) => {
   const { id, name, image, description } = products || {};
 
   const axios = useAxios();
+  const { user } = useAuth();
 
   const handleAddToCart = () => {
-    const cartItem = { name, image };
+    const cartItem = { name, image, email: user.email };
     console.log(cartItem);
 
     axios.post('/cart', cartItem).then((res) => {
