@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-
 const Banner = () => {
   const bannerStyle = {
     backgroundImage: 'url("https://i.postimg.cc/ydgM1pkV/cybermon.jpg")',
